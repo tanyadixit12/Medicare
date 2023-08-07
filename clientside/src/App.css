@@ -1,0 +1,640 @@
+.App {
+  text-align: center;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #5371ad; 
+  height: 100vh;
+  display: flex;
+   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(255, 255, 255);
+
+}
+
+
+
+/* footer----------------------------- */
+
+.social-container {
+  background: #adaaaa;
+  padding: 25px 50px;
+  /* position:absolute; */
+  bottom: 0;
+  width: 100%;
+}
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+a.social:hover {
+  transform: translateY(-2px);
+}
+a.linkedin {
+  color: #4d56d7;
+}
+
+a.facebook {
+  color: #4968ad;
+}
+
+a.twitter {
+  color: #49a1eb;
+}
+
+a.instagram {
+  color: black;
+}
+.question-list{
+  text-align: center;
+  margin-top: 50px;
+
+}
+
+/* Style to list the questions......... */
+.question-list ul li{
+  display: inline-flex;
+  border: 1px solid skyblue;
+  padding: 5px;
+  width: 150px;
+}
+.question-list ul{
+  margin: 0px;
+}
+.name{
+  width: 40px;
+}
+.contain{
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 500px;
+  border: solid black;
+  margin: auto;
+
+
+}
+.addproblem label{
+  padding: 4px;
+  margin: 10px;
+  display: block;
+
+  
+}
+.addproblem input{
+  width: 100%;
+}
+.questions {
+  display: flex;
+  margin: 0%;
+}
+.questions p{
+  margin-top: 2px ;
+  margin-left: 10px;
+  font-size:x-large;
+  
+
+}
+.div2{
+  margin: 8px 0px 5px 10px;
+  text-align: initial;
+
+}
+
+.hint{
+  /* height: 400px; */
+  /* display: flex; */
+  margin-top: 2.3%;
+  margin-bottom: 10%;
+  text-align: initial;
+  
+}
+.hint button{
+  margin: 1.5% 0px 0px 0.8%;
+}
+.div2 input{
+  margin: 1% 5px 1px 1px;
+  animation-name: myanimation;
+  animation-duration: 10s;
+  background-color: white;
+}
+.div2 label{
+  margin: 5px 0px 27px -9px;
+  font-size: large;
+  width:-webkit-fill-available;
+  background-color: rgb(243, 242, 241);
+  padding: 5px;
+  /* margin: 5px 0px 24px -9px; */
+  
+}
+
+.inputtag{
+  border: none;
+  border-bottom: solid 1px;
+
+  cursor: pointer;
+
+}
+.label{
+  cursor: pointer;
+}
+.projectname{
+  text-align: initial;
+
+}
+.inputfield{
+  border: none;
+  border-bottom: solid 0.5px;
+  width: 70%;
+  font-size: large;
+  padding: 0px 0px 0px 20px;
+}
+.file-upload{
+ text-align: center;
+ display: none;
+}
+
+ .addp-container{
+  display: inline-block;
+  border: solid rgb(88, 33, 33);
+  width: 50vw;
+  height: 94vh;
+  font-size: larger;
+  
+
+}
+@media screen and (min-width: 768px) {
+    .addp-container{
+      text-align: initial;
+    }
+  }
+.inner-container{
+  display: grid;
+}
+.type-and-name{
+  width: 75%;
+  margin: 15px 10px 25px 10px;
+}
+#cars{
+  margin: 10px 10px 12px 17px;
+}
+.addp-container input{
+  border: none;
+  border-bottom: solid blue;
+
+}
+.problem-text{
+  width: 83%;
+  border: solid blue;
+  display: inline-table;
+}
+.statement-area{
+  margin-top: 20px;
+
+}
+.options{
+  display: grid;
+  margin: 60px 10px 25px 10px;
+}
+.options input{
+  width: 60%;
+}
+.options label{
+  margin-bottom: 5px;
+} 
+
+/* to implement Add problem new  CSS....................... */
+
+.container-contact100 {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #e6e6e6;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+}
+
+.wrap-contact100 {
+  width: 920px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 62px 55px 90px;
+}
+
+.contact100-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact100-form-title {
+  display: block;
+  width: 100%;
+  font-family: Montserrat-Black;
+  font-size: 39px;
+  color: #333;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 59px;
+}
+
+.validate-input {
+  position: relative;
+}
+
+.wrap-input100 {
+  width: 100%;
+  position: relative;
+  border: 1px solid #e6e6e6;
+  border-radius: 13px;
+  padding: 10px 30px 9px 22px;
+  margin-bottom: 20px;
+}
+input.input100 {
+  height: 40px;
+}
+
+.selecttype-level {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  outline: none;
+  border: none;
+  writing-mode: horizontal-tb !important;
+    
+}
+
+.label-input100 {
+  font-family: Montserrat-SemiBold;
+  font-size: 10px;
+  color: #393939;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+textarea.input100 {
+  min-height: 120px;
+  padding-top: 9px;
+  padding-bottom: 13px;
+}
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+textarea {
+  outline: none;
+  border: none;
+}
+
+.input100 {
+  display: block;
+  width: 100%;
+  background: 0 0;
+  font-family: Montserrat-SemiBold;
+  font-size: 18px;
+  color: #555;
+  line-height: 1.2;
+  padding-right: 15px;
+}
+.bg1 {
+  background-color: #f7f7f7;
+}
+
+
+
+.container-contact100-form-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+  width: 100%;
+}
+.contact100-form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  background-color: #333;
+  border-radius: 25px;
+  font-family: Montserrat-Medium;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  -moz-transition: all .4s;
+  transition: all .4s;
+}
+
+button {
+  outline: none!important;
+  border: none;
+  background: 0 0;
+  overflow: visible;
+
+}
+
+@media screen and (max-width: 576px){
+.alert-validate::before {
+    padding: 0 10px;
+}
+}
+
+@media screen and (max-width: 576px) {
+  .wrap-input100 {
+    padding: 10px 10px 9px;
+}
+}
+
+
+/* Home css implementation......... */
+
+.Home-container{
+  background-image: url('https://preview.colorlib.com/theme/webuni/img/bg.jpg.webp'); 
+   background-size: "cover";
+  height: 108vh;
+  margin-top: -70px;
+  font-size:50px;
+  background-repeat:no-repeat; 
+  background-position: top center;
+  /* position: relative; */
+}
+.inner-box{
+/* background-color: #607c97; */
+height: 80vh;
+width: 80vw;
+font-size: xx-large;
+margin-left: auto;
+margin-right: auto;
+padding-top: 340px;
+color: white;
+
+}
+.inner-box h2{
+  font-family: fantasy;
+  font-size: larger;
+}
+.inner-box h4{
+  font-family: fantasy;
+  font-size: inherit;
+}
+
+.searchbar{
+  height: 53px;
+  width: 36.4%;
+  padding: 0 30px;
+  margin-right: 22px;
+  /* float: left; */
+  border: none;
+  font-size: 14px;
+}
+.searchbtn{
+  display: inline-block;
+  min-width: 196px;
+  text-align: center;
+  border: none;
+  padding: 15px 10px;
+  font-weight: 600;
+  font-size: 16px;
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+  background: #d82a4e;
+}
+
+
+.course{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.course-col{
+  margin-bottom:5% ;
+  flex-basis: 31%;
+  background:#fff3f3 ;
+  border: radius 10px; ;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 00.5s;
+
+}
+.course-col:hover{
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.row
+{
+  justify-content: space-between;
+}
+
+/* css to show topics  */
+.topic-list{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.topic-col{
+  margin-bottom:5% ;
+  flex-basis: 31%;
+  /* background:#fff3f3 ; */
+  border: radius 10px; ;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 00.5s;
+
+}
+.topic-col a{
+  text-decoration: none;
+  color: currentColor;
+}
+.googlelogin{
+  margin-top: 5%;
+  margin-left: 36%;
+}
+.googlesignup{
+  margin-top: 5%;
+  margin-left: 3%;
+}
+
+
+
+
+@media(max-width:700px){
+  .row{
+      flex-direction: column;
+
+  }
+}
+
+/* css for comment  */
+.be-comment-block {
+  margin-bottom: 50px !important;
+  border-radius: 2px;
+  padding: 50px 70px;
+  border:1px solid #ffffff;
+  background-color: #e9ebee;
+}
+
+.comments-title {
+  font-size: 16px;
+  color: #262626;
+  margin-bottom: 15px;
+  font-family: 'Conv_helveticaneuecyr-bold';
+}
+
+.be-img-comment {
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin-bottom: 15px;
+}
+
+.be-ava-comment {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.be-comment-content {
+  margin-left: 80px;
+}
+
+.be-comment-content span {
+  display: inline-block;
+  width: 49%;
+  margin-bottom: 15px;
+}
+
+/*  */
+
+.be-comment-content a {
+  color: #383b43;
+}
+
+.be-comment-content span {
+  display: inline-block;
+  width: 49%;
+  margin-bottom: 15px;
+}
+
+.be-comment-time {
+  text-align: right;
+}
+
+.be-comment-time {
+  font-size: 11px;
+  color: #b4b7c1;
+}
+
+.be-comment-text {
+  font-size: 13px;
+  line-height: 18px;
+  color: #7a8192;
+  display: block;
+  background: #f6f6f7;
+  border: 1px solid #edeff2;
+  padding: 15px 20px 20px 20px;
+  overflow-wrap: break-word;
+}
+
+
+.form-group .form-input {
+  font-size: 13px;
+  line-height: 50px;
+  font-weight: 400;
+  color: #b4b7c1;
+  width: 100%;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid #edeff2;
+  border-radius: 3px;
+}
+
+.form-group.fl_icon .form-input {
+  padding-left: 70px;
+}
+
+.form-group textarea.form-input {
+  height: 150px;
+}
+.all-comments{
+  margin-top:20px;
+}
+
+/* css for comment end */
+.all-lists{
+  margin: 10px;
+  padding: 2%;
+}
+.new-post{
+  height: 500px;
+  overflow:scroll;
+}
+
+/* Star Button css******** */
+
+.star-button {
+  display: inline-block;
+  border:#212529;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.star-icon {
+  color: #adb5bd;
+  font-size: 24px;
+}
+
+.star-icon2{
+  color: red;
+  font-size: 24px;
+}
+
+
+@keyframes myAnimation {
+  from {background-color:white;}
+  to {background-color: rgb(52, 224, 167);}
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
